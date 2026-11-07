@@ -1,82 +1,31 @@
-/* ===================================================
-   FOLHA DE ESTILO PRINCIPAL - PORTAL DE ENTRETENIMENTO
-   =================================================== */
+/* --- ESTILOS EXCLUSIVOS POR SEÇÃO (IDs) --- */
 
-/* Estilização Geral do Body */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121214;
-    color: #e1e1e6;
-    padding: 20px;
-    line-height: 1.5;
+/* Seção 1: Filmes e Séries (Tom Vermelho/Cinema) */
+#secao-cinemas {
+    background-color: #1a0f12;
+    border-top: 4px solid #e50914;
+}
+#secao-cinemas .titulo-secao {
+    color: #e50914;
+    border-bottom-color: #e50914;
 }
 
-/* Título Principal com ID Único */
-#titulo-portal {
-    text-align: center;
-    font-size: 2.5em;
+/* Seção 2: Música e Podcasts (Tom Roxo/Áudio) */
+#secao-musica {
+    background-color: #120f1a;
+    border-top: 4px solid #bb86fc;
+}
+#secao-musica .titulo-secao {
+    color: #bb86fc;
+    border-bottom-color: #bb86fc;
+}
+
+/* Seção 3: Games e Tecnologia (Tom Verde/Neon) */
+#secao-games {
+    background-color: #0f1a14;
+    border-top: 4px solid #00e676;
+}
+#secao-games .titulo-secao {
     color: #00e676;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-/* Container Flexbox para organizar as 3 colunas lado a lado */
-.container-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-    width: 100%;
-}
-
-/* Classe comum para as colunas de seções */
-.secao-portal {
-    flex-grow: 1;
-    flex-basis: 0;
-    background-color: #1e1e24;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Estilo para os Títulos das Seções (h2) */
-.titulo-secao {
-    font-size: 1.5em;
-    color: #ff9800;
-    text-align: center;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #ff9800;
-    padding-bottom: 5px;
-}
-
-/* Estilo padronizado para as imagens */
-.img-destaque {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin: 10px 0;
-    transition: transform 0.3s ease;
-}
-
-.img-destaque:hover {
-    transform: scale(1.03);
-}
-
-/* Estilo dos parágrafos explicativos */
-.texto-descricao {
-    font-size: 0.9em;
-    color: #c4c4cc;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
-/* Estilização do Rodapé */
-footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 15px;
-    font-size: 0.85em;
-    color: #8d8d99;
+    border-bottom-color: #00e676;
 }
