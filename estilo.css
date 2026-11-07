@@ -1,31 +1,105 @@
-/* --- ESTILOS EXCLUSIVOS POR SEÇÃO (IDs) --- */
+/* ===================================================
+   FOLHA DE ESTILO PRINCIPAL - PORTAL DE ENTRETENIMENTO
+   =================================================== */
 
-/* Seção 1: Filmes e Séries (Tom Vermelho/Cinema) */
+/* Reset simples para garantir caixas responsivas */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121214;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+/* Título Principal com ID Único */
+#titulo-portal {
+    text-align: center;
+    font-size: 2.2em;
+    color: #00e676;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* REGRA FLEXBOX: Coloca as 3 seções lado a lado */
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Classe comum para as 3 colunas */
+.secao-portal {
+    flex: 1; /* Garante que as 3 colunas tenham larguras iguais */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ESTILOS EXCLUSIVOS POR ID PARA CADA SEÇÃO */
 #secao-cinemas {
     background-color: #1a0f12;
     border-top: 4px solid #e50914;
 }
 #secao-cinemas .titulo-secao {
     color: #e50914;
-    border-bottom-color: #e50914;
+    border-bottom: 2px solid #e50914;
 }
 
-/* Seção 2: Música e Podcasts (Tom Roxo/Áudio) */
 #secao-musica {
     background-color: #120f1a;
     border-top: 4px solid #bb86fc;
 }
 #secao-musica .titulo-secao {
     color: #bb86fc;
-    border-bottom-color: #bb86fc;
+    border-bottom: 2px solid #bb86fc;
 }
 
-/* Seção 3: Games e Tecnologia (Tom Verde/Neon) */
 #secao-games {
     background-color: #0f1a14;
     border-top: 4px solid #00e676;
 }
 #secao-games .titulo-secao {
     color: #00e676;
-    border-bottom-color: #00e676;
+    border-bottom: 2px solid #00e676;
+}
+
+/* Títulos das Seções (h2) */
+.titulo-secao {
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+/* Imagens Ilustrativas */
+.img-destaque {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+/* Parágrafos Explicativos (Texto claro para contraste) */
+.texto-descricao {
+    font-size: 0.9em;
+    color: #e1e1e6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    font-size: 0.85em;
 }
