@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portal de Entretenimento Digital</title>
+    
+    <!-- 1. Importação do CSS Reset (Eric Meyer) -->
+    <link rel="stylesheet" href="reset.css">
+    
+    <!-- 2. Importação da Folha de Estilos Externa -->
+    <link rel="stylesheet" href="estilo.css">
+    
+    <!-- 3. CSS Interno (Requisito da Atividade) -->
+    <style>
+        /* Destaque para legendas/subtítulos nas seções */
+        .subtitulo-interno {
+            color: #00bcd4;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
 
+    <header>
+        <h1 id="titulo-portal">Meu Portal de Entretenimento Digital</h1>
+    </header>
+
+    <!-- Layout Flexbox com 3 seções lado a lado -->
+    <main class="container-flex">
+
+        <!-- Seção 1: Filmes e Séries -->
+        <section class="secao-portal" id="secao-cinemas">
+            <h2 class="titulo-secao">Filmes e Séries</h2>
+            
+            <span class="subtitulo-interno">Suspense e Ficção</span>
+            <img class="img-destaque" src="https://picsum.photos/300/160?random=1" alt="Cena de filme de suspense com iluminação dramática">
+            <p class="texto-descricao">
+                O universo das produções cinematográficas de suspense e ficção científica traz narrativas psicológicas complexas e visuais marcantes que prendem a atenção do início ao fim.
+            </p>
+
+            <span class="subtitulo-interno">Dramas Aclamados</span>
+            <img class="img-destaque" src="https://picsum.photos/300/160?random=2" alt="Cena dramática de série de TV">
+            <p class="texto-descricao">
+                Séries dramáticas continuam dominando as plataformas de streaming com atuações inesquecíveis, roteiros premiados e desenvolvimento profundo de personagens.
+            </p>
+        </section>
+
+        <!-- Seção 2: Música e Podcasts -->
+        <section class="secao-portal" id="secao-musica">
+            <h2 class="titulo-secao">Música e Podcasts</h2>
+
+            <span class="subtitulo-interno">Sintetizadores e Beats</span>
+            <img class="img-destaque" src="https://picsum.photos/300/160?random=3" alt="Equipamentos de produção musical e mesa de som">
+            <p class="texto-descricao">
+                A música eletrônica e o synth-pop continuam evoluindo com produções detalhadas, arranjos modernos e timbres marcantes que ditam tendências nas pistas de dança.
+            </p>
+
+            <span class="subtitulo-interno">Podcasts Informativos</span>
+            <img class="img-destaque" src="https://picsum.photos/300/160?random=4" alt="Microfone de estúdio para gravação de podcast">
+            <p class="texto-descricao">
+                Os áudios sob demanda oferecem conteúdos enriquecedores que abordam desde tecnologia e filosofia até análises detalhadas de cultura pop e negócios.
+            </p>
+        </section>
+
+        <!-- Seção 3: Games e Tecnologia -->
+        <section class="secao-portal" id="secao-games">
+            <h2 class="titulo-secao">Games e Tecnologia</h2>
+
+            <span class="subtitulo-interno">Jogos de Ação e RPG</span>
+            <img class="img-destaque" src="https://picsum.photos/300/160?random=5" alt="Controle de videogame com luzes LED iluminadas">
+            <p class="texto-descricao">
+                Os títulos modernos de RPG e ação combinam jogabilidade refinada, deslumbrantes gráficos em alta definição e mundos abertos repletos de desafios imersivos.
+            </p>
+
+            <span class="subtitulo-interno">Hardware e Inovação</span>
+            <img class="img-destaque" src="https://picsum.photos/300/160?random=6" alt="Placa de circuito e tecnologia computacional avançada">
+            <p class="texto-descricao">
+                A constante evolução dos componentes de hardware impulsiona novas experiências digitais, otimizando o desempenho em plataformas móveis e computadores de alta performance.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Rodapé com exemplo de CSS Inline (Requisito da Atividade) -->
+    <footer>
+        <p style="color: #ff5252; font-style: italic; border-top: 1px solid #323238; padding-top: 10px;">
+            Desenvolvido como atividade prática para a Agenda 13 - Desenvolvimento de Sistemas I (ETEC).
+        </p>
+    </footer>
+
+</body>
+</html>
